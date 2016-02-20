@@ -1,5 +1,10 @@
 from car import Car
 
 if __name__ == '__main__':
-	car = Car("Carmen")
-	car.openDoor()
+	car1 = Car("Carmen")
+	car2=Car("Pavi")
+	car3=Car("Poppy")
+	car4=Car("Maria")
+	car1.openDoor()
+	car1.start_engine()
+	print(car2.owner)
