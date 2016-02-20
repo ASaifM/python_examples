@@ -15,3 +15,15 @@ class Car:
 		if not self.engineOn: 
 			self.engineOn = True
 			print ("The engine has started!") 
+
+class Food:
+	pizza= True
+	brocoli = False 
+	lemonade = True
+	kid= ""
+	def __init__ (self, kid):
+		print ("Who's hungry?")
+		self.kid=kid
+	def hungry (self):
+		if self.pizza: 
+			print ("Not Hungry")
