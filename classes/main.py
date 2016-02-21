@@ -1,4 +1,4 @@
-from car import Car, Food
+from car import Car, Food, BMWCar
 
 if __name__ == '__main__':
 	car1 = Car("Carmen")
@@ -10,7 +10,13 @@ if __name__ == '__main__':
 	car1.brand="BMW"
 	print(car1.brand)
 
-if __name__ == '__main__':
 	kid1=Food('Carmen')
 	kid2=Food('Minna')
-	print(kid1.hungry())
+	kid1.hungry()
+
+	bmw_car = BMWCar("Zizo")
+	bmw_car.start_engine()
+	bmw_car.adjust_seat()
+	print (bmw_car.owner)
+	bmw_car.openDoor()
+

@@ -16,6 +16,18 @@ class Car:
 			self.engineOn = True
 			print ("The engine has started!") 
 
+class BMWCar(Car):
+	def __init__(self, owner):
+		Car.__init__(self,owner)
+		print ("A BMW not just any car!")
+
+	def adjust_seat(self):
+		print ("Seat adjusted!")
+
+	def openDoor(self):
+		Car.openDoor(self)
+		print("Not just any car but a BMW!")
+
 class Food:
 	pizza= True
 	brocoli = False 
