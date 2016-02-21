@@ -36,6 +36,12 @@ class AudiCar(Car):
 	def start_engine(self):
 		super().start_engine()
 		print ("Roar! Roar!")
+
+class MercedesCar(Car):
+	def __init__(self,owner):
+		super(MercedesCar,self).__init__(owner)
+		print ("Elegance is a trademark!")
+
 class Food:
 	pizza= True
 	brocoli = False 

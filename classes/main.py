@@ -1,4 +1,4 @@
-from car import Car, Food, BMWCar, AudiCar
+from car import Car, Food, BMWCar, AudiCar, MercedesCar
 
 if __name__ == '__main__':
 	car1 = Car("Carmen")
@@ -22,4 +22,5 @@ if __name__ == '__main__':
 
 	audi_car = AudiCar("Tim")
 	audi_car.start_engine()
-
+	
+	mer_car = MercedesCar("Florence")
