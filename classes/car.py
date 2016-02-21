@@ -28,6 +28,14 @@ class BMWCar(Car):
 		Car.openDoor(self)
 		print("Not just any car but a BMW!")
 
+class AudiCar(Car):
+	def __init__(self,owner):
+		super().__init__(owner)
+		print ("Don't mess with me, I'm an Audi")
+
+	def start_engine(self):
+		super().start_engine()
+		print ("Roar! Roar!")
 class Food:
 	pizza= True
 	brocoli = False 
