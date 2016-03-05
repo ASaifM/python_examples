@@ -1,4 +1,4 @@
-
+from functools import reduce
 
 def factorial_rec(n):
 	if n == 0:
@@ -16,11 +16,10 @@ def multiply (x, y):
 	return x * y
 
 def factorial_fun_sim(n):
-	return reduce(multiply,[1]+range(1,n+1))
+	return reduce(multiply,[1]+list(range(1,n+1)))
 
 def factorial_fun_lam(n):
-	return reduce(lambda x,y:x*y,[1]+range(1,n+1))
-
+	return reduce(lambda x,y:x*y,[1]+list(range(1,n+1)))
 def fib_rec(n):
 	if n == 0 or n == 1:
 		return n 
@@ -51,4 +50,5 @@ if __name__ == '__main__':
 	print (fib_dp(100))
 	print (fib_dp_dic(50))
 	'''
-	print (factorial_fun_sim(4))
+	print(factorial_fun_sim(4))
+	
