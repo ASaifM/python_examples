@@ -43,14 +43,12 @@ def fib_dp_dic(n):
 
 
 if __name__ == '__main__':
-	print (factorial_rec(3))
+	'''print (factorial_rec(3))
 	print (factorial_loop(5))
 	print (factorial_fun_sim(6))
 	print (factorial_fun_lam(7))
-
-	'''
-	Don't try fib_rec with big numbers
-	'''
 	print (fib_rec(10))
 	print (fib_dp(100))
 	print (fib_dp_dic(50))
+	'''
+	print (factorial_fun_sim(4))
